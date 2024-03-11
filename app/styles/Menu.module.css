@@ -1,20 +1,78 @@
 .menu {
-    display: flex;
-    justify-content: space-around;
-    padding: 20px;
-    background-color: #fff;
+  text-align: center;
+  padding: 4rem 0;
+  background-color: #fff;
+}
+
+.menu h2 {
+  color: #333;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.menuItems {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.menuItem {
+  width: 200px;
+  margin: 1rem;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.menuItem:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.menuItem h3 {
+  margin: 0.5rem 0;
+  color: #333;
+}
+
+/* ... other styles ... */
+
+.menuItems {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.imageContainer {
+  width: 80px; /* Adjust size to match your design */
+  height: 80px;
+  margin-bottom: 0.5rem;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1); /* Shadow effect */
+  border-radius: 50%; /* Circular images */
+  overflow: hidden;
+}
+
+.menuItem {
+  flex-basis: 20%; /* Adjust this percentage based on the number of items per row */
+  text-align: center;
+}
+
+.menuItem h3 {
+  margin-top: 0.5rem;
+  color: #333;
+  font-size: 1rem;
+}
+
+/* Adjust media queries for responsiveness */
+@media (max-width: 768px) {
+  .menuItem {
+    flex-basis: 33.3333%;
   }
-  
-  .menu div {
-    text-align: center;
+}
+
+@media (max-width: 480px) {
+  .menuItem {
+    flex-basis: 50%;
   }
-  
-  .menu img {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    margin-bottom: 10px;
-  }
-  
-  /* Add additional styling as needed */
-  
+}

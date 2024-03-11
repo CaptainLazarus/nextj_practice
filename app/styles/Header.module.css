@@ -1,21 +1,77 @@
-.nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    background-color: #ffffff;
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
-  }
-  
-  .nav a {
-    margin: 0 1rem;
-    text-decoration: none;
-    color: #333;
-    font-weight: 500;
-    transition: color 0.3s ease;
-  }
-  
-  .nav a:hover {
-    color: #0070f3;
-  }
-  
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: #fff;
+  font-family: 'Roboto', sans-serif; /* Using the imported font family */
+}
+
+.logo a {
+  color: #FA4A0C; /* Example color for the logo */
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.nav a {
+  color: #3E4152; /* Dark grey color for the menu items */
+  font-weight: 500;
+  margin: 0 1rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover {
+  color: #FA4A0C; /* Highlight color on hover */
+}
+
+.auth a {
+  color: #3E4152; /* Dark grey color for the auth links */
+  margin-left: 1rem;
+  text-decoration: none;
+}
+
+.auth a:hover {
+  color: #FA4A0C; /* Highlight color on hover */
+}
+
+.cart {
+  position: relative;
+  margin-right: 1rem;
+}
+
+.badge {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 20px;
+  height: 20px;
+  background-color: #FA4A0C;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.login {
+  color: #3E4152; /* Adjust colors to match design */
+  margin-right: 1rem;
+  text-decoration: none;
+}
+
+.signup {
+  background-color: #FA4A0C; /* Adjust colors to match design */
+  color: #fff;
+  padding: 0.5rem 1.5rem;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.signup:hover {
+  background-color: #D93907;
+}

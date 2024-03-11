@@ -1,16 +1,36 @@
-import styles from '../styles/Menu.module.css'
+import Image from 'next/image';
+import styles from '../styles/Menu.module.css'; // Ensure this CSS module exists
 
 const Menu = () => {
-  return (
-    <div className="menu">
-      {/* Map through your menu items here, using placeholders for images */}
-      <div>
-        <img src="path_to_placeholder_image" alt="Fried Chicken" />
-        <p>Fried Chicken</p>
-      </div>
-      {/* Repeat for other menu items */}
-    </div>
-  )
-}
+  const menuItems = [
+    { name: 'Fried Chicken', img: '/pizza.jpg' },
+    { name: 'Pizza', img: '/pizza.jpg' },
+    { name: 'Burger', img: '/pizza.jpg' },
+    { name: 'Coffee', img: '/pizza.jpg' },
+    { name: 'Salad', img: '/pizza.jpg' }
+  ];
 
-export default Menu
+  return (
+    <section className={styles.menu}>
+      <h2>Our Menu</h2>
+      <div className={styles.menuItems}>
+        {menuItems.map((item, index) => (
+          <div key={index} className={styles.menuItem}>
+            <div className={styles.imageContainer}>
+              <Image
+                src={item.img} // Path to the placeholder image
+                alt={item.name}
+                width={100}
+                height={100}
+                layout="responsive"
+              />
+            </div>
+            <h3>{item.name}</h3>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+};
+
+export default Menu;

@@ -1,18 +1,46 @@
 .hero {
-  text-align: center;
-  padding: 4rem 2rem;
-  background-color: #f7f7f7;
-  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 4rem;
+  background-color: #fff; /* Assuming a white background */
 }
 
-.hero h1 {
-  margin: 0;
-  font-size: 3rem;
-  font-weight: bold;
+.heroText h1 {
   color: #333;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
 }
 
-.hero p {
+.heroText p {
   color: #666;
+  margin-bottom: 2rem;
+}
+
+.searchBox {
+  display: flex;
+  position: relative;
+}
+
+.searchBox input {
+  padding: 1rem;
+  margin-right: -1px; /* This is to make the button align perfectly with the input */
+  border: 1px solid #ddd;
+  border-radius: 4px 0 0 4px;
   font-size: 1rem;
 }
+
+.searchBox button {
+  padding: 1rem 1.5rem;
+  background-color: #FA4A0C;
+  color: #fff;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+.heroImage {
+  flex: 1;
+}
+
+/* Adjustments might be necessary to perfectly match your design */
