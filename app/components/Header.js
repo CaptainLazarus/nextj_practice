@@ -93,7 +93,9 @@ export default function Navbar() {
       <Box style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-evenly', flex: 3, width: '100%'}}>
       <Badge badgeContent={4} color="secondary">
         <Button style={{
-          backgroundColor: '#ff7700'
+          backgroundColor: '#ff7700',
+          minWidth: '2.5em',
+          minHeight: '2.5em'
         }}>
           <ShoppingCartOutlinedIcon style={{
           color: 'white',
@@ -107,7 +109,8 @@ export default function Navbar() {
               color: '#333',
               textTransform: 'none',
               marginLeft: '20px',
-              border: '1px solid blue'
+              border: '1px solid blue',
+              height: '2.5em'
             }}
           >
             Login
@@ -116,7 +119,8 @@ export default function Navbar() {
         <Link href="/register" passHref>
           <Button variant="contained"
             style={{
-              backgroundColor: 'blue'
+              backgroundColor: 'blue',
+              height: '2.5em'
             }}
           >
             Create Account
