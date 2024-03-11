@@ -8,7 +8,7 @@ import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 const CustomIconButton = ({ isSelected, IconComponent }) => (
   <IconButton
     style={{
-      backgroundColor: isSelected ? 'orange' : 'white',
+      backgroundColor: isSelected ? '#ff7700' : 'white',
       color: isSelected ? 'white' : 'black',
       '&:hover': {
         backgroundColor: isSelected ? 'red' : '#eeeeee',

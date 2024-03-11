@@ -25,7 +25,7 @@ const Hero = () => {
           maxWidth: '600px', // Set a max width for the text container
         }}
       >
-        <Typography variant="h3" component="h1" gutterBottom sx={{ fontWeight: 'bold', color: 'orange' }}>
+        <Typography variant="h3" component="h1" gutterBottom sx={{ fontWeight: 'bold', color: '#ff7700' }}>
           Order Your Best
         </Typography>
         <Typography variant="h3" component="h1" gutterBottom sx={{ fontWeight: 'bold', color: 'black' }}>

@@ -93,10 +93,11 @@ export default function Navbar() {
       <Box style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-evenly', flex: 3, width: '100%'}}>
       <Badge badgeContent={4} color="secondary">
         <Button style={{
-          backgroundColor: 'orange'
+          backgroundColor: '#ff7700'
         }}>
           <ShoppingCartOutlinedIcon style={{
-          color: 'white'
+          color: 'white',
+          fontSize: '1.7em'
         }}/>
         </Button>
         </Badge>
@@ -114,12 +115,6 @@ export default function Navbar() {
         </Link>
         <Link href="/register" passHref>
           <Button variant="contained"
-            // sx={{
-            //   color: 'white',
-            //   backgroundColor: 'blue',
-            //   textTransform: 'none',
-            //   marginLeft: '20px',
-            // }}
             style={{
               backgroundColor: 'blue'
             }}

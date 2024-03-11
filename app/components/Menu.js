@@ -49,7 +49,7 @@ const Menu = () => {
             // border: '1px solid black',
             padding: '1%',
             borderRadius: '10%',
-            backgroundColor: item.name === 'Burger' ? 'orange' : 'white',
+            backgroundColor: item.name === 'Burger' ? '#ff7700' : 'white',
             color: item.name === 'Burger' ? 'white' : 'black',
             boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.3)', // Shadow effect
           }}>
