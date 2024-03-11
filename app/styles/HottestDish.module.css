@@ -1,0 +1,28 @@
+.hottest-dish {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .hottest-dish h2 {
+    color: #333;
+    margin-bottom: 30px;
+  }
+  
+  .hottest-dish div {
+    display: inline-block;
+    margin: 10px;
+    background-color: #fff;
+    padding: 15px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+  }
+  
+  .hottest-dish img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  /* Add additional styling as needed */
+  
